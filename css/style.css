@@ -1,0 +1,331 @@
+:root {
+  --main-color: #35424a;
+  --secondary-color: #e8491d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+body {
+  font: 15px/1.5 Arial, Helvetica, sans-serif;
+  background-color: #eee;
+}
+
+.web {
+  background-color: var(--main-color);
+  text-transform: capitalize;
+  border-bottom: 5px solid var(--secondary-color);
+  color: white;
+}
+
+.web .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.web__logo span {
+  color: var(--secondary-color);
+}
+
+.web__list {
+  display: flex;
+  list-style: none;
+}
+
+.web__item {
+  margin-right: 20px;
+}
+
+.web__link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.web__link--color {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.web__link:hover {
+  font-weight: bold;
+}
+
+@media (max-width:768px) {
+  .web .container {
+    display: block;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .web__list {
+    justify-content: center;
+
+  }
+
+}
+
+.showcase {
+  background-image: url(../img/showcase.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+.showcase .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.showcase__body {
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.showcase__title {
+  text-transform: capitalize;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.showcase__desc {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.subscribe {
+  background-color: var(--main-color);
+  color: white;
+  padding: 40px 0;
+  text-transform: capitalize;
+}
+
+.subscribe .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe__title {
+  font-size: 20px;
+}
+
+.subscribe__contact {
+  padding: 10px 80px 10px 5px;
+}
+
+.subscribe__btn {
+  color: white;
+  background-color: var(--secondary-color);
+  border: none;
+  padding: 10px 20px;
+  text-transform: capitalize;
+
+}
+
+@media (max-width:768px) {
+  .subscribe .container {
+    display: block;
+    text-align: center;
+  }
+
+  .subscribe__btn {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    padding: 10px 100px;
+  }
+
+}
+
+.programming .container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 40px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.programming__logo {
+  width: 90px;
+}
+
+.programming__title {
+  padding: 10px 0;
+}
+
+.programming__desc {
+  padding-bottom: 20px;
+}
+
+@media (max-width:768px) {
+  .programming .container {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 35px;
+  margin-top: 20px;
+
+}
+
+.about-us .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.info__title {
+  padding-bottom: 10px;
+}
+
+.info__desc {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.info__desc--color--dark {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.answer {
+  margin-top: 20px;
+  color: white;
+  background-color: var(--main-color);
+  height: 40%;
+  padding: 10px;
+}
+
+.answer__title {
+  padding: 10px;
+}
+
+@media (max-width:768px) {
+  .about-us .container {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+}
+
+.service__content {
+  margin-top: 20px;
+}
+
+.services__title {
+  padding-bottom: 10px;
+}
+
+.card {
+  background-color: #e6e6e6;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+
+.card__title {
+  margin: 20px 20px 5px;
+}
+
+.card__desc {
+  margin: 5px 20px;
+}
+
+.card__price {
+  margin: 5px 20px 20px;
+}
+
+.quote {
+  margin-top: 20px;
+  color: white;
+  background-color: var(--main-color);
+  height: 50%;
+  padding: 10px;
+}
+
+.quote__title {
+  margin: 10px;
+}
+
+.quote__form {
+  display: block;
+}
+
+.quote__contact {
+  width: 90%;
+  padding: 5px;
+}
+
+.quote__btn {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+}
+
+@media (max-width:768px) {
+  .services .container {
+    display: block;
+    text-align: center;
+  }
+
+  .quote__btn {
+    padding: 10px 180px;
+  }
+
+}
